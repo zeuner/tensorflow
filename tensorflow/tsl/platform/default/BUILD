@@ -144,6 +144,8 @@ cc_library(
         "//tensorflow/tsl/platform:path",
         "//tensorflow/tsl/platform:platform_port",
         "//tensorflow/tsl/platform:protobuf",
+        "@com_google_absl//absl/log",
+        "@com_google_absl//absl/container:btree",
         "//tensorflow/tsl/platform:regexp",
         "//tensorflow/tsl/platform:scanner",
         "//tensorflow/tsl/platform:setround",
@@ -207,6 +209,8 @@ cc_library(
     deps = [
         "//tensorflow/tsl/platform:errors",
         "//tensorflow/tsl/platform:protobuf",
+        "@com_google_absl//absl/log",
+        "@com_google_absl//absl/container:btree",
         "//tensorflow/tsl/platform:status",
         "//tensorflow/tsl/platform:strcat",
     ],
@@ -543,6 +547,8 @@ cc_library(
     deps = [
         "//tensorflow/tsl/platform",
         "//tensorflow/tsl/platform:protobuf",
+        "@com_google_absl//absl/log",
+        "@com_google_absl//absl/container:btree",
     ],
 )
 

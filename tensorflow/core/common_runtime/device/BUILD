@@ -37,6 +37,7 @@ cc_library(
     ],
     deps = [
         "//tensorflow/core:lib",
+        "@com_google_absl//absl/log",
         "//tensorflow/core/platform:types",
         "//tensorflow/tsl/framework:device_id",
     ] + if_static([
@@ -53,6 +54,7 @@ cc_library(
     deps = [
         "//tensorflow/core:framework",
         "//tensorflow/core:lib",
+        "@com_google_absl//absl/log",
         "//tensorflow/core:lib_internal",
         "//tensorflow/tsl/framework:device_id_impl",
     ],
@@ -72,6 +74,7 @@ tf_cuda_library(
         ":device_id",
         "//tensorflow/compiler/xla/stream_executor:device_mem_allocator",
         "//tensorflow/core:lib",
+        "@com_google_absl//absl/log",
         "//tensorflow/core:lib_internal",
         "//tensorflow/core/framework:allocator",
         "//tensorflow/core/platform:stream_executor",
@@ -104,6 +107,7 @@ cc_library(
         "//tensorflow/core:framework",
         "//tensorflow/core:framework_internal",
         "//tensorflow/core:lib",
+        "@com_google_absl//absl/log",
         "//tensorflow/core:lib_internal",
         "//tensorflow/core:protos_all_cc",
         "//tensorflow/core/platform:stream_executor",
@@ -125,6 +129,7 @@ cc_library(
     visibility = ["//visibility:public"],
     deps = [
         "//tensorflow/core:lib",
+        "@com_google_absl//absl/log",
     ],
 )
 
@@ -144,6 +149,7 @@ tf_cuda_cc_test(
         "//tensorflow/core:framework",
         "//tensorflow/core:framework_internal",
         "//tensorflow/core:lib",
+        "@com_google_absl//absl/log",
         "//tensorflow/core:lib_internal",
         "//tensorflow/core:protos_all_cc",
         "//tensorflow/core:test",
@@ -165,6 +171,7 @@ tf_cuda_cc_test(
         "//tensorflow/core:framework",
         "//tensorflow/core:framework_internal",
         "//tensorflow/core:lib",
+        "@com_google_absl//absl/log",
         "//tensorflow/core:lib_internal",
         "//tensorflow/core:protos_all_cc",
         "//tensorflow/core:test",

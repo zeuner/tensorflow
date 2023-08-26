@@ -130,6 +130,7 @@ cc_library(
     hdrs = ["byte_swap_array.h"],
     deps = [
         "//tensorflow/tsl/platform:byte_order",
+        "@com_google_absl//absl/log",
         "//tensorflow/tsl/platform:errors",
         "//tensorflow/tsl/platform:status",
     ],

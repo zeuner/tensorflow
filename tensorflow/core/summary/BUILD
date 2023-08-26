@@ -23,6 +23,7 @@ cc_library(
     deps = [
         "//tensorflow/core:lib",
         "//tensorflow/core/lib/db:sqlite",
+        "@com_google_absl//absl/log",
     ],
 )
 
@@ -50,6 +51,7 @@ cc_library(
         "//tensorflow/core:protos_all_cc",
         "//tensorflow/core/kernels:summary_interface",
         "//tensorflow/core/lib/db:sqlite",
+        "@com_google_absl//absl/log",
     ],
 )
 
@@ -65,6 +67,7 @@ tf_cc_test(
         "//tensorflow/core:test",
         "//tensorflow/core:test_main",
         "//tensorflow/core/lib/db:sqlite",
+        "@com_google_absl//absl/log",
     ],
 )
 
@@ -129,6 +132,7 @@ tf_cc_binary(
         "//tensorflow/core:lib",
         "//tensorflow/core:protos_all_cc",
         "//tensorflow/core/lib/db:sqlite",
+        "@com_google_absl//absl/log",
     ],
 )
 
@@ -140,5 +144,6 @@ tf_cc_binary(
         "//tensorflow/core:framework_internal",
         "//tensorflow/core:lib",
         "//tensorflow/core/lib/db:sqlite",
+        "@com_google_absl//absl/log",
     ],
 )

@@ -406,7 +406,8 @@ def py_proto_library(
         if dep != "@com_google_protobuf//:protobuf_python":
             genproto_deps.append(dep + "_genproto")
         else:
-            genproto_deps.append("@com_google_protobuf//:well_known_types_py_pb2_genproto")
+            dummy = 1
+            # genproto_deps.append("@com_google_protobuf//:well_known_types_py_pb2_genproto")
 
     proto_gen(
         name = name + "_genproto",

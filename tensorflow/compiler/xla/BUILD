@@ -172,6 +172,8 @@ cc_library(
     visibility = [":friends"],
     deps = [
         ":debug_options_flags",
+        "@com_google_absl//absl/log",
+        "@com_google_absl//absl/container:btree",
         ":xla_proto_cc",
     ],
 )
