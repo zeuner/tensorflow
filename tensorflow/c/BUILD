@@ -444,6 +444,7 @@ cc_library(
         "//conditions:default": [
             "//tensorflow/core:framework",
             "@com_google_absl//absl/log",
+            "@com_google_absl//absl/container:btree",
         ],
     }),
     alwayslink = 1,
